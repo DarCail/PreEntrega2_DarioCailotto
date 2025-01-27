@@ -1,9 +1,0 @@
-// mixin para grid
-
-@mixin grid ($display, $columns, $rows){
-    display: $display;
-    grid-template-columns: $columns;
-    grid-template-rows: $rows;
-    gap: 2rem;
-    align-content: center;
-}
