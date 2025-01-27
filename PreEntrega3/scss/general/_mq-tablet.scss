@@ -1,0 +1,26 @@
+//include de mixin de grid
+@import "../utilidades/mixin";
+
+
+
+
+
+
+/* estilos de tablet */
+
+@media screen and (min-width: 600px){
+    main{
+        @include grid (grid, repeat(2, 1fr), 4);
+        .informacion, .seccion2, .seccion3{
+            grid-column-start: 1;
+            grid-column-end: -3;
+        }
+        .img-1, .img-2, .img-3{
+            width: 50%;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+    
+
+}
